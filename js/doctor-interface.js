@@ -24,4 +24,8 @@ $(document).ready(function(){
     $('#results').empty();
     doctorObject.getDoctors(medicalIssue, displayDoctors);
   });
+
+  // $('a.media-left').click(function(){
+  //
+  // })
 });
