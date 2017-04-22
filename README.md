@@ -7,12 +7,6 @@
 ## Description
 A website where users may enter a medical issue (ie: “sore throat”, "rash", etc.) into a form, submit it, and receive a list of doctors nearby who can treat their medical issue. Data used in this application is sourced from the Better Doctor API.
 
-
-## Specifications
-
-| Behavior                   | Input Example     | Output Example    |
-| -------------------------- | -----------------:| -----------------:|
-
 ## Known Bugs
 None thus far, but if you find anything amiss, please feel free to contact me at the.finney@gmail.com or fork the project and submit a pull-request with any proposed changes.
 

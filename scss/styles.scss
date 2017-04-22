@@ -1,0 +1,30 @@
+.jumbotron {
+  text-align: center;
+}
+
+#userInput {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inputLabel {
+  display: inline-block;
+}
+
+.media {
+  border: 1px solid black;
+  float: left;
+  width: 25%;
+  max-height: 150px;
+  margin: 0 1% 2% 4%;
+  padding: 1%;
+}
+
+.media:hover {
+  box-shadow: 0 4px 10px darkgray;
+}
+
+.media-body h5{
+  overflow: scroll;
+}
