@@ -1,7 +1,7 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var displayDoctors = function(donks) {
-  donks.map(function(individualDoctor) {
+var displayDoctors = function(allDoctors) {
+  allDoctors.map(function(individualDoctor) {
     $('#results').append( '<div class="media">'+
                             '<div class="media-left">'+
                               '<a href="#">'+
@@ -11,7 +11,9 @@ var displayDoctors = function(donks) {
                             '<div class="media-body">'+
                               '<h4 class="media-heading">' + individualDoctor.name + '</h4>'+
                               '<h6>' + individualDoctor.practice + '</h6>'+
-                              '<h5><em>' + individualDoctor.actor + ' - ' + individualDoctor.specialty + '</em></h5>'+
+                              '<hr>' +
+                              '<h5><em>' + individualDoctor.actor + ' - ' + individualDoctor.specialty + '</em></h5><br>'+
+                              '<h5 id="phoneNum"> Contact: ' + individualDoctor.phone + '</h5>' +
                             '</div>'+
                           '</div>');
   });

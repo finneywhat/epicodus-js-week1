@@ -2,6 +2,7 @@ $green : #58D68D;
 $blue-gray : #858899;
 $orange : #FF5733;
 $yellowish : #DAF7A6;
+$shadow : 0 2px 6px black;
 
 .jumbotron {
   text-align: center;
@@ -24,13 +25,14 @@ $yellowish : #DAF7A6;
   margin-top: 2%;
   width: 30%;
   color: white;
-  background-color: $green;
-  border: 1px solid $green;
+  background-color: #d8d9de;
+  border: 2px solid white;
 }
 
 .btn:hover {
-  background-color: $blue-gray;
   color: white;
+  background-color: $green;
+  border: 2px solid $green;
 }
 
 #userInput {
@@ -47,15 +49,32 @@ $yellowish : #DAF7A6;
   border: 1px solid $blue-gray;
   float: left;
   width: 40%;
-  max-height: 200px;
+  height: 200px;
   margin: 0 0 2% 6.6%;
   padding: 1%;
   overflow: scroll;
+  font-family: 'Strait';
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#search-results {
+  display: none;
+  margin-top: 2%;
+  color: red;
+}
+
+#phoneNum {
+
 }
 
 .media-heading {
+  margin-top: 3%;
   color: white;
-  text-shadow: 0 2px 6px black;
+  text-shadow: $shadow;
 }
 
 .media:hover {
@@ -64,6 +83,10 @@ $yellowish : #DAF7A6;
 
 .media-body {
   overflow: scroll;
+}
+
+.media-object {
+  margin-top: 25%;
 }
 
 .doctor-list {
