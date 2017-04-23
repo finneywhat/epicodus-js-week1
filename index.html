@@ -5,23 +5,47 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <title>Find a Doctor</title>
   </head>
   <body>
     <div class="jumbotron">
       <div class="container-fluid">
-        <h1>Find a Doc</h1>
+        <h1>Doctors Within Borders</h1>
+        <p>
+          Search a malady to find doctors in Portland, OR
+        </p>
         <form>
-          <label id="inputLabel">Enter an Illness</label>
           <input class="form-control" type="text" id="userInput" placeholder="e.g. stomach pains" required>
         </form>
         <button id="btnResults" type="button" class="btn btn-default">Search</button>
       </div>
     </div>
     <div class="container-fluid doctor-list">
-      <div id="results">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1" id="results">
 
+        </div>
       </div>
+    </div>
+    <div class="footer container-fluid">
+      <div class="col-md-push-3 col-md-6" id="footer-padding">
+        <h2 style="font-family: 'Lobster'">Chris Finney</h2>
+        <p>
+          Docotrs Within Borders
+        </p>
+        <br>
+        <p>
+          Epicodus | JavaScript | Independent Project
+        </p>
+        <br>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          <em>Doctor Within Borders istor aanem fictitiousleosut doctum finodut, buot ifit werenum realut, itpo wioulud ipbe amalotzingem.</em>
+        </p>
+      </div>
+    </div>
       <!-- Doctor Modal -->
       <div class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">

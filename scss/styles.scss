@@ -1,21 +1,23 @@
 $green : #58D68D;
-$blue-gray : #5D6178;
+$blue-gray : #858899;
 $orange : #FF5733;
 $yellowish : #DAF7A6;
 
 .jumbotron {
   text-align: center;
+  font-family: 'Strait', sans-serif;
   color: white;
   margin-bottom: 0;
-  background-color: $blue-gray;
+  background: -webkit-linear-gradient(to bottom, $blue-gray, white);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, $blue-gray, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 500px;
 }
 
 .jumbotron h1 {
+  font-family: 'Strait', sans-serif;
   margin-top: 5%;
-  font-size: 100px;
+  font-size: 70px;
   font-weight: 100;
-  font-family: serif;
 }
 
 .btn {
@@ -26,26 +28,34 @@ $yellowish : #DAF7A6;
   border: 1px solid $green;
 }
 
+.btn:hover {
+  background-color: $blue-gray;
+  color: white;
+}
+
 #userInput {
   width: 30%;
+  margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#inputLabel {
-  display: inline-block;
-  margin-top: 5%;
-  margin-bottom: 1%;
-}
-
 .media {
-  background-color: $green;
+  background: #283c86;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, $blue-gray, white);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, $blue-gray, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: 1px solid $blue-gray;
   float: left;
-  width: 25%;
-  max-height: 150px;
-  margin: 0 1% 2% 4%;
+  width: 40%;
+  max-height: 200px;
+  margin: 0 0 2% 6.6%;
   padding: 1%;
+  overflow: scroll;
+}
+
+.media-heading {
+  color: white;
+  text-shadow: 0 2px 6px black;
 }
 
 .media:hover {
@@ -58,5 +68,24 @@ $yellowish : #DAF7A6;
 
 .doctor-list {
   padding-top: 5%;
-  background-color: #F9FDFB;
+  background-color: white;
+}
+
+h6 {
+  color: $green;
+  text-shadow: 0 1px 1px black;
+}
+
+.footer {
+  margin-top: 200px;
+  background: -webkit-linear-gradient(to bottom, white, $blue-gray);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, white, $blue-gray); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  text-align: center;
+  font-family: 'Strait';
+  padding-bottom: 50px;
+}
+
+.footer h2 {
+  text-shadow: 0 2px 1px $green;
 }
