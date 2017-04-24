@@ -10,7 +10,7 @@ var displayDoctors = function(allDoctors) {
                             '</div>'+
                             '<div class="media-body">'+
                               '<h4 class="media-heading">' + individualDoctor.name + '</h4>'+
-                              '<h6>' + individualDoctor.practice + '</h6>'+
+                              '<h5>' + individualDoctor.practice + '</h5>'+
                               '<hr>' +
                               '<h5><em>' + individualDoctor.actor + ' - ' + individualDoctor.specialty + '</em></h5><br>'+
                               '<h5 id="phoneNum"> Contact: ' + individualDoctor.phone + '</h5>' +
